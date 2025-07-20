@@ -1,0 +1,528 @@
+<html>
+  <head>
+    <meta charset='utf-8'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <meta content='Ivan Lopez Pedreañez' name='author'/>
+    <meta content='La mejor literatura de la cultura occidental ' name='description'/>
+    <meta content='literatura, cultura occidental, clasicos, literatura clasica, literatura gotica,  literatura romantica, literatura filosofia, novelas ' name='keywords'/>
+
+    
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link async="async" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> 
+    <script async='async' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <link async="async" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- GOOGLE FONTS-->
+    <link async="async" href="https://fonts.googleapis.com/css?family=Abel|Pacifico|Lora|Roboto|Lobster|Economica|Marck+Script|Sacramento|Tangerine|Lovers+Quarrel|Nova+Square|Roboto|Raleway|Satisfy" rel="stylesheet" />
+
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      <title>Blancanieves: Coming of Age</title>
+      <style>
+
+        .mox {width:75%;}
+      html,body{
+        background-image: url('golden.jpeg');
+        background-size:  cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+          font-family:Abel;
+          overflow-x: hidden; 
+          height:; 
+          width:;
+
+      }
+      :root{
+        --oldgold:rgba(120,97,0,0.75);
+        --golder:#D4AF37;
+        --yellow:#FABB13FF;
+      };
+      .flex-centrado-c{ display:flex; flex-flow: column nowrap; justify-content: center; align-items: center; align-content: center; }
+      .flex-centrado-r{ display:flex; flex-flow: row nowrap;  justify-content: center; align-items: center; align-content: center; }
+
+        #nav_bar {background-color:var(--yellow);}
+        #golden_frame {
+            position:fixed;
+            float:left;
+            width:27%;
+            z-index:1;
+            top:50px;
+          }
+        #golden_frame2 {
+            position:fixed;
+            float:left;
+            width:4.6%;
+            z-index:1;
+            top:356px;}
+
+                #jumboSchnee {
+                    position: relative;
+                    background: #000 center center;
+                    width: 100%;
+                    height: ;                    
+                    background-size: cover;
+                    overflow: hidden;
+                    color: #fff;
+                    padding-top: 10%;
+              
+                }
+                svg {  text-shadow: -1px 0px 1px rgb(97, 100, 5);}
+                #svg1 {font-size:240;}
+                #cuento_schnee, #cuento_title_schnee, #analisis_schnee, #cuento_title_analisis_schnee {display:;}
+
+                 @media screen and (max-width:800px){#svg1 {font-size:80;}
+
+                }
+      </style>
+  </head>
+  <body>
+    <nav class='navbar navbar-inverse navbar-fixed-top' id='nav_bar' style='background-color:var(--yellow)'>
+          <div class='container-fluid'>
+            <div class='navbar-header'>
+              <button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+                <span class='sr-only'>Toggle navigation</span>
+                
+              </button>
+              <a class='navbar-brand' href='https://literaturamagna.github.io' style='color:white;background-color:rgba(120,97,0,0.75);font-family:Lovers Quarrel;font-size:280%'>Magna Litterae</a>
+            </div>
+            <div class='navbar-collapse collapse' id='navbar'>
+              <ul class='nav navbar-nav' style='color:white'>
+                <li class='active'><a href='#' style='color: white'>Prólogo</a></li>
+                <li><a href='https://literaturamagna.github.io/p/novela/index.html' style='color:white'>Novelas</a></li>
+                <li><a href='https://literaturamagna.github.io/p/poesia/index.html' style='color:white'>Poesía</a></li>
+                <li><a href='https://literaturamagna.github.io/p/dramae/index.html' style='color:white'>Drama</a></li>
+                <li><a href='https://literaturamagna.github.io/p/epica/index.html' style='color:white'>Épica</a></li>
+                <li><a href='https://literaturamagna.github.io/p/fairytails/index.html' style='color:white'>Fairy Tales</a></li>
+                
+                <li class='dropdown'>
+                  <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' style='color:white'>Leer <span class='caret'/>
+                  </a>
+                  <ul class='dropdown-menu'>
+                    <li><a href='https://literaturamagna.github.io/biblioteca.html'>Biblioteca</a></li>
+                    <li><a href='https://literaturamagna.github.io/obras.html'>De mi pluma</a></li>                                   
+                  </ul>
+                </li>
+
+          <li class='dropdown'>
+                  <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' style='color:white'>Circa<span class='caret'/>
+                  </a>
+                  <ul class='dropdown-menu'>
+                    <li><a href='about-analisis.html'>Analisis</a></li>
+                    <li><a href='about-literature.html'>Literatura</a></li>                  
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class='nav navbar-nav navbar-right '>
+                <li class='active'>
+                  <a href='./' style='background-color:black;color:white'>Contáctanos <span class='sr-only'>(current)</span></a>
+                </li>             
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav> 
+
+        <img id='golden_frame' src='https://3.bp.blogspot.com/-kpNiQhvlkis/W11T8zZgavI/AAAAAAAAFDo/169-Bo0knlsoBdA5oQpjuWjJAa3zhfWxgCLcBGAs/s1600/golden_frame01.png'/>
+      <img id='golden_frame2' src='https://3.bp.blogspot.com/-WAfHW6SbYmc/W3IsFZEmVBI/AAAAAAAAFKs/gt8CAZs7HNQJ1OmaSFTwEmeFIZj22CzYACLcBGAs/s1600/golden_frame03.png'/>
+      <!-- END NAVIGATION BOOTSTRAP BAR-->
+   
+    <!--Jumbotron-->
+    
+    <div id='jumboSchnee' class="jumbotron">
+        <div class='container'>          
+            <h1  style='text-indent:5px;color:#e43400; font-family:&quot;Pacifico&quot;;'>
+                 <em>Blancanieves</em>
+            </h1>
+            <center><br/><br/> <p style='font-size:16px; font-family:Monserrat; font-weight:300'> s </p>       
+            </center>
+        </div>
+    </div>
+      <!-- FIN JUMBOTRON -->
+    <center id="cuento_title_schnee" style="text-align: right;padding:1% 5%">
+      <h3>El Cuento:
+        
+      </h3>
+
+      <div id="cuento_schnee">
+        <p>Había una vez hace mucho tiempo, allá en el norte, a la mitad del invierno, cuando los copos de nieve caen como plumas desde el cielo, una reina que gustaba de coser sentada junto a una ventana que tenía los marcos hechos de ébano negro. Y mientras cosía y miraba hacia afuera el caer de la nieve , se punzó uno de sus dedos, y tres gotas de sangre cayeron sobre algunos copos de nieve que habían entrado por la ventana. Y vio aquella sangre preciosa sobre la blanca nieve, y pensó:</p>
+          <p>-“¡Oh!, ¡Si yo llegara a tener una niña que tuviera el blanco de la nieve, el rojo de la sangre, y el negro del ébano del marco de esta ventana!”-</p>
+          <p>Pronto tuvo la dicha de tener una linda niña, que era tan blanca como la nieve, sus mejillas rojas como la sangre, y su cabello tan negro como el ébano. Por lo tanto la llamó Blanca-Nieves. Pero poco después de nacer la niña, la reina murió.</p>
+          <p>Después de pasado un año, el rey tomó otra esposa. Era bella, pero orgullosa y engreída, y no soportaba que existiera otra mujer que la sobrepasara en hermosura. Ella poseía un espejo mágico, y cuando se colocaba al frente y se miraba en él, le decía:</p>
+          <p>-“Espejito, espejito, que estás en la pared ¿Quién en esta tierra es la más bella?”-</p>
+          <p>Y el espejo contestaba:</p>
+          <p>-“Tú, gran reina, eres la más bella de todas.”-</p>
+          <p>Y ella quedaba satisfecha, porque sabía que el espejo le decía siempre la verdad.</p>
+          <p>Unos años después el rey falleció, pero Blanca-Nieves fue creciendo, y crecía más y más bondadosa, educada y preparada cada día, y cuando ya estaba joven era tan bella en su espíritu, como un día primaveral, y por todas sus buenas cualidades superaba en mucho a la belleza física de la misma reina.</p>
+          <p>Y llegó al fin un día en que la reina preguntó de nuevo:</p>
+          <p>-“Espejito, espejito, que estás en la pared ¿Quién en esta tierra es la más bella?”-</p>
+          <p>El espejo contestó:</p>
+          <p>-“Tú eres físicamente la más bella de todas las mujeres que hay por aquí, excepto por Blanca-Nieves, a quien su bondad la hace ser aún más bella que tú. Así lo creo.”-</p>
+          <p>Entonces la reina se enfureció, y su tez se tornó amarilla y verde de la envidia. A partir de entonces, donde quiera que viera a Blanca-Nieves, su corazón se estremecía en su pecho, y llegó a odiar muchísimo a la muchacha.</p>
+          <p>A medida que la envidia y el orgullo crecían más y más en su corazón como una maleza, así también dejaba de tener paz en el día y en la noche.</p>
+          <p>En un momento dado, no soportando más, llamó a un cazador y le dijo:</p>
+          <p>-“Llévate a la muchacha adentro del bosque, no quiero tenerla más a mi vista. Mátala, y tráeme su corazón al regreso como prueba.”-</p>
+          <p>El cazador obedeció y la llevó lejos, pero cuando él sacó su cuchillo, y estaba a punto de herir a la inocente Blanca-Nieves, ella, llorando le dijo:
+          <p>-“¡Ay, querido cazador, déjame vivir! Yo me internaré lejos en la espesura y nunca más volveré a casa de nuevo.”-</p>
+          <p>Y como ella era tan dulce y buena, el cazador tuvo piedad y dijo:</p>
+          <p>-“Corre, vete lejos, pobre muchacha.”-</p>
+          <p>-“Las bestias salvajes pronto la devorarán.”- se pensó él.</p>
+          <p>Y sintió como si una enorme y pesada piedra se hubiera escapado de su pecho, ante el hecho de que ya no era necesario que tuviera que matarla. Y justo en ese momento un joven jabalí se acercó por donde él estaba, le sacó el corazón y se lo llevó a la reina como prueba de que la joven había muerto.</p>
+          <p>Ahora la pobre muchacha se hallaba sola en el gran bosque, y tan aterrorizada que hasta las hojas de los árboles la asustaban. Entonces empezó a correr, y saltaba sobre filosas piedras y punzantes espinos, y las bestias salvajes corrían tras ella, pero no le hacían daño.</p>
+          <p>Ella corrió tan lejos como pudieron darle sus piernas hasta la llegada del anochecer. Entonces divisó una pequeña cabaña y entró en ella a dormir. Todo lo que había en la cabaña era pequeño, pero tan limpio y aseado como no podría describirse. Había una mesa con un mantel blanco y siete platos pequeños, y con cada plato una cucharita. Es más, había siete pequeños cuchillos y tenedores, y siete jarritas. Y contra la pared se hallaban siete pequeñas camas una junto a la otra y cubiertas con colchas tan blanquitas como la nieve.</p>
+          <p>La joven Blanca-Nieves estaba tan hambrienta y sedienta que ella tomó y comió un poquito de vegetales y pan de cada platito y bebió una gota de vino de cada jarrita, porque no deseaba coger todo de un mismo plato y jarra. Entonces, al estar tan cansada, trató de acomodarse en alguna camita, pero a como iba probando, ninguna le asentaba bien, hasta que llegó a la última que sí le sirvió, y ahí se quedó. Dijo su oración, y se acomodó a dormir.</p>
+          <p>Cuando ya había oscurecido, regresaron los dueños de la cabaña. Eran siete enanos que cavaban y extraían oro y piedras preciosas en las montañas. Encendieron sus siete candelas, y con su luz observaron que alguien había estado allí, pues las cosas no estaban exactamente en el orden en que las acostumbraban tener.</p>
+          <p>El primero dijo:-“¿Quién se ha sentado en mi silla?”-</p>
+          <p>El segundo:-“¿Quien comió de mi plato?”-</p>
+          <p>El tercero:-“¿Quién cogió parte de mi pan?”-</p>
+          <p>El cuarto:-“¿Quién tomó parte de mis vegetales?”-</p>
+          <p>El quinto:-“¿Quien usó mi tenedor?”-</p>
+          <p>El sexto: -“¿Quién usó mi cuchillo?”-</p>
+          <p>El séptimo: -“¿Quien bebió de mi jarra?”-</p>
+          <p>Entonces el primero observó alrededor y vio que había un pequeño hundimiento en su cama y dijo:</p>
+          <p>-“¿Quién se ha metido en mi cama?”-</p>
+          <p>Y los demás fueron a revisar sus camas, diciendo:</p>
+          <p>-“Alguien ha estado en nuestras camas también”-</p>
+          <p>Pero cuando el séptimo miró en su cama, vio a Blanca-Nieves, quien dormía profundamente allí.</p>
+          <p>Y llamó a los demás, quienes llegaron corriendo, y suspiraron con asombro, y trajeron sus siete candelas para alumbrar mejor a la joven Blanca-Nieves.</p>
+          <p>-“¡Oh, cielos!, ¡Oh, cielos!”- susurraban – “¡Que encantadora muchacha!”-</p>
+          <p>Y les encantó tanto que no la despertaron, y la dejaron dormir en la cama. Y el séptimo enano se acomodó entre sus compañeros, turnándose a ratos de un lugar a otro por toda la noche.</p>
+          <p>Cuando llegó el amanecer, Blanca-Nieves despertó, y se asustó cuando vio a los siete enanos. Pero ellos fueron amistosos y le preguntaron su nombre.</p>
+          <p>
+          -“Mi nombre es Blanca-Nieves.”- contestó.
+          <p>
+          -“¿Y cómo fue que llegaste a nuestra cabaña?”- preguntaron los enanos.
+          <p>
+          Ella les dijo que la reina la mandó a matar, pero que el cazador le salvó la vida, y que corrió durante todo el día, hasta que por fin encontró su vivienda. Los enanos dijeron:
+          <p>
+          -“Si puedes tomar cuidado de nuestra casa, cocinar, arreglar las camas, lavar, coser y tejer, y mantienes todo limpio y nítido, puedes quedarte lo que quieras por nada.”-
+          <p>
+          -“Sí, claro.”- respondió ella, -“Con todo mi corazón.”- y se quedó con ellos.
+          <p>
+          Les mantuvo su casa en orden. Ellos iban en las mañanas a las montañas a buscar oro y piedras preciosas, y al atardecer regresaban, encontrando ya lista su cena al llegar.
+          <p>
+          La joven tenía que quedarse sola todo el día, por lo que los buenos enanos siempre le decían:
+          <p>
+          -“Ten cuidado de la reina, pronto se enterará de que estás aquí, así que no dejes entrar a nadie.”-
+          <p>
+          Mientras tanto, la reina, creyendo que ya Blanca-Nieves no estorbaba, no hacía otra cosa más que pensar en que ella era de nuevo la más hermosa. Y fue donde el espejo y dijo:
+          <p>
+          -“Espejito, espejito, que estás en la pared ¿Quién en esta tierra es la más bella?”-
+          <p>
+          y el espejo contestó:
+          <p>
+          -“Oh, reina, tú eres lo más bello que yo he podido ver,
+          pero en las montañas, sobre las colinas, donde viven los siete enanos,
+          Blanca-Nieves aún vive con muy buena salud,
+          y no hay ninguna, que por su bondad, sea más bella que ella.”-
+          <p>
+          La reina se quedó atónita, pues sabía que el espejo jamás mentía, y comprendió que el cazador la traicionó, y que por eso Blanca-Nieves aún vivía.
+          <p>
+          Y pensó y pensó de nuevo cómo podría matarla, para que aquella no siguiera siendo la más bella en el mundo. Y la envidia no la dejaba descansar. Cuando ya hubo meditado sobre qué hacer, se pintó la cara, y se disfrazó como una vieja vendedora, de tal manera que nadie la hubiera reconocido. Con ese disfraz se dirigió a la montaña a la casa de los siete enanos, tocó la puerta y gritó:
+          <p>
+          -“¡Vendo bellas cosas, baratitas, baratitas!”-
+          <p>
+          La joven Blanca-Nieves se asomó por la ventana y la llamó:
+          <p>
+          -“¡Buenos días, mi buena señora, qué es lo que tiene para vender?”-
+          <p>
+          -“Buenas cosas y bellas cosas”- contestó, -“lazos de muchos colores para lucir en la garganta”-, y ella jaló uno que estaba confeccionado con finas y coloridas sedas.
+          <p>
+          -“Voy a pagarle a esa viejita”- pensó Blanca-Nieves.
+          <p>
+          Quitó la cerradura a la puerta y compró el lazo, y se lo colocó ella misma.
+          <p>
+          -“Jovencita”- dijo la mujer, -“Qué mal te lo pusiste. Permíteme ponértelo adecuadamente de una vez.”-
+          <p>
+          Blanca-Nieves no sospechó nada y se mantuvo junto a ella y dejó que le montara el nuevo lazo. Pero la vieja mujer lo puso tan rápido y tan apretado que Blanca-Nieves perdió el sentido y la respiración, y cayó al suelo como muerta.
+          <p>
+          -“Ahora ya soy la más bella.”- se decía a sí misma la reina, y se alejó rápidamente.
+          <p>
+          No mucho rato después, al atardecer, regresaron los siete enanos, pero se sintieron totalmente perturbados cuando vieron a su amada Blanca-Nieves yaciendo en el suelo, y que no se movía ni respondía y parecía como si estuviera muerta. La incorporaron y vieron que tenía un lazo muy apretado. Lo cortaron y ella comenzó a respirar lentamente, y al cabo de un rato se recuperó totalmente. Cuando los enanos escucharon lo que había pasado dijeron:
+          <p>
+          -“La vieja vendedora no era otra persona más que la malvada reina. Ten mucha precaución y no te acerques a nadie mientras no estemos contigo.”-
+          <p>
+          Pero la perversa mujer, al llegar a su habitación, fue inmediatamente donde el espejo y preguntó:
+          <p>
+          -“Espejito, espejito, que estás en la pared ¿Quién en esta tierra es la más bella?”-
+          <p>
+          y el espejo contestó:
+          <p>
+          -“Oh, reina, tú eres lo más bello que yo he podido ver,
+          pero en las montañas, sobre las colinas, donde viven los siete enanos,
+          Blanca-Nieves aún vive con muy buena salud,
+          y no hay ninguna, que por su bondad, sea más bella que ella.”-
+          <p>
+          Cuando ella oyó aquello, toda su sangre se le subió a la cabeza con furia, de saber que Blanca-Nieves seguía aún con vida.
+          <p>
+          -“Pero ahora”- se dijo, “pensaré algo que será tu final.”
+          <p>
+          Y con ayuda de algo de brujería, en lo cual ella era experta, se fabricó un venenoso peine. Y tomó una nueva apariencia, con la forma de otra vieja mujer. Entonces volvió a ir a la casa de los siete enanos, tocó a la puerta y gritó con otra voz:
+          <p>
+          -“¡Vendo cosas buenas y baratas, baratas!”-
+          <p>
+          Blanca-Nieves se asomó y le dijo:
+          <p>
+          -“¡Váyase! ¡No puedo dejar entrar a nadie!”-
+          <p>
+          -“Supongo que al menos podrías mirar.”- dijo la vieja.
+          <p>
+          Y sacó el venenoso peine y lo sostuvo en alto. Y le gustó tanto a la muchacha que la sedujo y abrió la puerta. Una vez hecha la compra, la vieja mujer dijo:
+          <p>
+          -“Ahora te peinaré apropiadamente como debe ser de una vez.”-
+          <p>
+          La pobre Blanca-Nieves de nuevo no tuvo suspicacia, y dejó que la vieja hiciera como quiso. Pero no más había colocado el peine en su cabellera, cuando enseguida el veneno hizo efecto, y la joven cayó al suelo sin sentido.
+          <p>
+          -“Tú, modelo de bondad”- dijo la malvada mujer, -“ya estás lista.”- y se marchó.
+          <p>
+          Pero afortunadamente ya casi era el atardecer, la hora de regreso de los siete enanos. Cuando llegaron y vieron a Blanca-Nieves en el suelo, como muerta, enseguida sospecharon de la reina. La revisaron y encontraron el peine envenenado en la cabellera. Entonces de nuevo le recordaron a ella estar siempre en guardia y no abrir la puerta a nadie.
+          <p>
+          La reina, de nuevo en casa, corrió al espejo y dijo:
+          <p>
+          -“Espejito, espejito, que estás en la pared ¿Quién en esta tierra es la más bella?”-
+          <p>
+          y el espejo contestó:
+          <p>
+          “Oh, reina, tú eres lo más bello que yo he podido ver, pero en las montañas, sobre las colinas, donde viven los siete enanos, Blanca-Nieves aún vive con muy buena salud, y no hay ninguna, que por su bondad, sea más bella que ella.”-
+          <p>
+          Cuando ella oyó al espejo hablar así, se estremeció y golpeteó con rabia.
+          <p>
+          -“Blanca-Nieves deberá morir”- gritó ella, -“aunque me cuesta la vida.”-
+          <p>
+          Inmediatamente bajó a un salón secreto, solitario, donde nadie más que ella podía llegar, y allí hizo una muy venenosa manzana. Por fuera la manzana se vería preciosa, con unos pómulos rojizos muy atrayentes, que cualquiera que la viera desearía tomarla, pero quien mordiera aún una pequeña porción, de seguro moriría.
+          <p>
+          Cuando estuvo terminada la manzana, se pintó la cara, y se vistió como una campesina, y así regresó a la casa de los siete enanos en la montaña. Tocó a la puerta. Blanca-Nieves asomó su cabeza por la ventana y dijo:
+          <p>
+          -“¡No puedo abrirle a nadie!, los enanos me lo han prohibido!
+          <p>
+          -“Me da lo mismo”- contestó la mujer, -“Pronto terminaré con mis manzanas. Pero te obsequiaré una para ti.”-
+          <p>
+          -“No”- dijo Blanca-Nieves, -“No debo aceptar nada.”-
+          <p>
+          -“¿Temes que estén envenenadas?”- dijo la vieja mujer. -“Mira, cortaré la manzana en dos piezas. Tú te comes la orilla roja, y yo la parte blanca.”-
+          <p>
+          La manzana estaba tan perfectamente confeccionada, que solamente la parte roja contenía el veneno. Blanca-Nieves deseaba la manzana, y cuando vio que la mujer comía tranquilamente su parte blanca, no resistió más y tomó en sus manos la porción envenenada. Pero no había terminado de saborear el primer bocado, cuando cayó como muerta. Entonces la reina la miró con una mirada terrorífica, y se rió fuertísimo diciendo:
+          <p>
+          -“¡Blanca como la nieve, roja como la sangre y negra como la madera de ébano! Esta vez los enanos no podrán reanimarte de nuevo”-
+          <p>
+          Y ya en su habitación, cuando preguntó al espejo:
+          <p>
+          -“Espejito, espejito, que estás en la pared ¿Quién en esta tierra es la más bella?”-
+          <p>
+          al fin le dijo:
+          <p>
+          -“Oh, reina, en este mundo, tú eres la más bella de todas.”-
+          <p>
+          Entonces su envidioso corazón sintió descanso, si es que un corazón envidioso puede llegar a tener algún descanso.
+          <p>
+          Cuando regresaron los enanos al atardecer, encontraron de nuevo a Blanca-Nieves yaciendo en el suelo. No se le sentía respirar y parecía muerta. La levantaron, la revisaron a ver si encontraban algo venenoso, le soltaron lazos, revisaron su cabellera, la lavaron con agua y vino, pero todo fue en vano. La pobre muchacha seguía como muerta. La colocaron entonces en un ataúd, y los siete se sentaron alrededor y lloraron por ella, y lloraron durante tres largos días.
+          <p>
+          Entonces ellos fueron a enterrarla, pero lucía tan linda como si estuviera viva, y aún conservaba sus rojas mejillas. Ellos dijeron:
+          <p>
+          -“No la enterremos en la oscura tierra.”-
+          <p>
+          Y construyeron un ataúd de cristal transparente, de modo que pudiera ser vista de todos lados, y la colocaron allí, y escribieron su nombre en letras doradas, y que era hija del rey. Entonces pusieron el ataúd en lo claro de la montaña, y uno de ellos siempre se quedaba acompañándola y vigilándola. Y llegaron también aves y lloraron por ella. Primero un búho, luego un cuervo, y de último una paloma.
+          <p>
+          Y ahora Blanca-Nieves estuvo por largo tiempo en el ataúd, y no cambiaba nada en absoluto, siempre aparentando que estaba dormida, porque era blanca como la nieve, roja como la sangre, y su cabello negro como el ébano.
+          <p>
+          Sucedió sin embargo, que el hijo de otro rey llegó al bosque, y fue a la casa de los enanos a pasar la noche. Y vio el ataúd en la montaña con la bella Blanca-Nieves dentro de él, y leyó las letras doradas que los enanos le habían escrito. Entonces dijo a los enanos:
+          <p>
+          -“Permítanme llevármela con el ataúd, yo le daré a ustedes lo que pidan por ella.”-
+          <p>
+          Pero los enanos respondieron:
+          <p>
+          -“No la dejaríamos ir por todo el oro del mundo.”-
+          <p>
+          Entonces les dijo:
+          <p>-“Permítanme tenerla como un obsequio, porque no podría vivir sin ver a Blanca-Nieves. Yo la honraré y valoraré como mi más amada posesión.”</p>
+          <p>Al hablar de ese modo, los enanos se compadecieron y le entregaron el ataúd.</p>
+          <p>Ahora el hijo del rey la hizo cargar en los hombros de sus sirvientes. Pero ocurrió que tropezaron con la raíz de un árbol, y con el golpe, el pedacito de manzana envenenada que Blanca-Nieves había mordido, salió disparado de su boca. Y al momento ella abrió los ojos, levantó la tapa del ataúd, se sentó, y una vez más le volvió la conciencia.</p>
+          <p>-“¡Oh, cielos!, ¿dónde estoy?” – preguntó sorprendida.</p>
+          <p>El hijo del rey, lleno de gozo, dijo:</p>
+          <p>-“Estás conmigo.”-</p>
+          <p>
+          Y le contó todo lo acontecido y agregó:
+          <p>
+          -“Te quiero más que nada en el mundo, ven conmigo al palacio de mi padre, y te haré mi esposa.”-
+          <p>
+          Blanca-Nieves aceptó y fue con él, y su boda fue celebrada con gran ceremonia y esplendor. Pero la malvada reina también fue invitada a la fiesta. Cuando ella ya se había arreglado glamorosamente en espléndidos vestidos, fue al espejo y le dijo:
+          <p>
+          -“Espejito, espejito, que estás en la pared ¿Quién en esta tierra es la más bella?”-
+          <p>
+          y el espejo contestó:
+          <p>
+          -“Oh, reina, eres lo más bello que yo he visto,
+          pero la joven reina, por su bondad, es aún más bella que tú.
+          <p>
+          Entonces la perversa mujer maldijo todo, y se sentía tan infeliz, pero tan infeliz, que no sabía qué hacer. Al principio no quería ir a la boda del todo, pero no tenía paz, y decidió ir a conocer a la joven princesa. Y cuando ingresó al salón, reconoció a Blanca-Nieves, y quedó paralizada de rabia y rencor, y no se pudo mover. Pero unas zapatillas de hierro ya habían sido colocadas sobre fuego de carbón y llevadas con pinzas y colocadas frente a ella. Luego tuvo que pisar los zapatos al rojo vivo y bailar hasta que cayó muerta al suelo.</p>
+      </div>
+    </center>
+    <br><hr/>
+    
+    <div style="padding-left: 5%">
+      <div id="cuento_title_analisis_schnee">
+        <svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad2" y2="1" x2="1" id="g" x1="1" y1="0.1433">
+              <stop stop-color="rgb(255, 213, 127)" offset="0" />
+              <stop stop-color="rgb(179, 149, 0)" offset="0.4817" />
+              <stop stop-color="rgb(179, 149, 0)" offset="1" />
+            </linearGradient>
+          </defs>
+          <text font-family="Tangerine" font-size='40' id="svg_1" y="45" x="288" fill="url(#grad2)">
+            <tspan x="0" y="45">Análisis</tspan>
+          </text>
+        </svg>
+      </div>
+    
+      <div id="about_analisis" >
+        ``<h2>Sobre el Análisis</h2>
+          <img id="img_about_analisis" src=""/>
+          <p>En ninguna oportunidad que se presente el término análisis, me refiero a un análisis literario científico riguroso. Recibe este término como una interpretación libre, pero sobre todo ficticia, como un género literario más dónde propongo una <a href="https://literaturamagna.blogspot.com/p/about-analisis.html">interpretación de un texto</a>, o parte de él, desde un punto de vista, no manipulado, pero que probblemente no se ajuste al texto en su totalidad y segurmente puede ser objetado con facilidad, así que la idea es leer los "análisis" como una obra de ficción con el objetivo de entretener, aunque no por eso están fuera de lógica o cambian intencionalmente el texto original.</p>
+
+          <p>Sin embargo, el hecho de muchas veces dejar de analizar grandes partes de un texto no significa de ninguna manera que la interpretación no pueda ser cierta, incluso si pierde validez al utilizarse en esas parte no incorpordas en el análisis. Esto va con el punto de vista que en este blog se utiliza del término literatura. Para entender mejor esto, revisa la sección <a  href="https://literaturamagna.blogspot.com/p/about-literature.html"> "Sobre la Literatura"</a>.</p>
+
+          <p>En definitiva me divierte solo me divierte imaginar que la interpretación que propongo es posible, y realmente aún no tengo motivos para considerarlas falsas, pero por no ser un experto ni haber hecho un trabjo de investigación profunda, solo las presente como invenciones factibles</p>
+      </div>
+
+      <div id="about_literatura"><h2>Sobre la Literatura</h2>
+        <img id="img_about_literatura" src=""/>
+        <p>En la concepción que se da en este blog al término literatura, no se contempla casi en inguna oportunicdad al "autor" como un ser del cual nace la obra y solo a él esta debe completamente su existencia</p>
+
+        <p>La idea que se defiende aquí es que un obra literaria nace en marco de un cultura, que su nacimiento y formacion es inevitable y siempre está latente a nacer y solo saldrá a la luz cuando las condiciones se den, y ese ser a quién se llama autor es solo una de las condiciones.</p>
+
+        <p>La idea principal es que no existe la total originalidad, y que cada obra es el resultado de la interación de diferentes ideas, puntos de vistas, situaciones, necesidades que se unen y se alimentan unas a otras a lo largo de siglos, y cundo por fin una persona, o grupo de personas, ponen "en papel" una obras, esta tiene tanto de ellos como de cada ser humano que ha participado en esa cultura (muchas veces incluso los de otras culturas)</p>
+
+        <p>En este sentido, decir que no tiene lógic apensar que "el autor" quisiera decir esto o aquello es casi esteril pues para fines de nuestor anaĺisis, "el autor" tiene tanto dominio de lo que la obra quiere o no decir como cada lector. Para más acerca de esto, ir a la página <a href="https://literaturamagna.blogspot.com/p/about-literature.html">"sobre literatura"</a></p>
+      </div>
+
+      <div id="about_fairy_tales"><h2>Sobre los Cuentos de Hadas</h2>
+        <img id="img_about_fairy_tales" src=""/>
+        <p>En particular, en los Cuentos de Hadas como género literario es donde mas fuerza cobra la representacion de la obra literaria como un esfuerzo colectivo pero casi inconsciente. Colectivo pues los cuentos de hadas por tradición no tienen un autor claro. Son "tradicionalmente" una historia oral contada a traves de generaciones y regiones recibiendo en cada época y lugar modificaciones que muchas veces parecen no tener un motivo claro.</p>
+
+        <p>Sin embargo, lo que aquí tomamos como un hecho, y que dirije las propuestas que se hacen, es que todo cuento de hadas no tiene una intención clara, al menos no en general. La teoría es que estas historias tienen cada una cientos o miles de años, con un origen que hace mucho se perdió en el tiempo, y que sobreviven gracias a que cada pueblo, cada generación las reutiliza como medio para transmitir sus valores a sus niños y niñas</p>
+
+        <p>La idea fundamental que se maneja en estos "análisis" es que los cuentos con protagonitas masculinos son contados para mostrar a los niños (varones) como se supone que deben comportarse, y a su vez, los cuentos con protagonistas femeninos son contados a las niñas con el mismo propósito. Pero no solo como un comportamiento diario, sino como una historia de como será, o debería ser, su vida a futuro: Qué tipo de vida debe llevar, cuales serán sus labores y a qué debe y no debe aspirar. Para explorar más tipo de mensajes pueden intentar transmitir estos cuentos ver la página <a href="https://literaturamagna.blogspot.com/p/cuentos-de-hadas.html">"Fairy Tails"</a></p>
+      </div>
+
+      <div id="about_grimms"><h2>Sobre los Hermanos Grimm</h2>
+      </div>
+
+      <div id="background_schnee"><h2>Background de la Historia</h2>
+      </div>
+
+      <div id="teoria_schnee"><h2>La Proposición</h2>
+      </div>
+
+      <div id="analisis_schnee"><h2>El Análisis</h2>
+
+
+        <h3>Los Números</h3>
+        No es "Blancanieves y los enanos" el nombre con el que recordamos el cuento. Ya no es ni siquiera solo Blancanieves, como se conocio por mucho tiempo, de hecho casi siempre ha sido así. Es la versión de DIsney la uqe hace hincapié en poner a los enenitos, y su cantidad, en el nombre. Ene sa versión los enanitos tienen nombres, cada uno asociado a un tipo de personalidad si es posible decirlo así, pero lo importante es que se humanizan y se diferencian, ya no son una voz general que habla. Y digo humanizan porque realmente antes de eso, en el cuento qeu tratamos aquí, bien podrían ser como un muchos cuentos, animales parlantes o como lo fueron en otras versiones, duendes.
+        Y es que no siempre fueron enanos, pero en la mayoria de las versiones relativamente largas (con largas me refieromás o menos a lo largo de la version de los grimm) existe este grupo de acompañantes para blancanienes, que no son hombres pero tampoco animales o fauna común.
+
+
+        <h3>El nombre</h3>
+        <q>Weis wie schnee, rot wie blut, schwarzehaare wie ebenholz</q>
+
+        <p>And although the most well-known Snow White version describes the hair of the main character as "black as ebony". But the Brothers Grimm knitted almost all their fairy tales several times over, and in the earliest written version of this material, Snow White had evidence of "eyes as black as ebony" and "yellow hair."
+
+
+        <a href="https://www.bebesymas.com/otros/el-curioso-origen-de-la-palabra-embarazada-en-varias-lenguas">La Muerte y la nueva Vida</a>
+        En la República africana de Malaui encontramos otro curioso origen. El embarazo visto como algo que puede dar la vida, pero también traer la muerte. La palabra tiene la connotación de 'enfermedad'.
+
+        En chichewa, el idioma de Malawi, existen tres palabras que designan "embarazo": "pakati", "matenda" y "wodwala". En este sentido, "pakati" significa literalmente "en el medio"; "wodwala" tienen cmo principal significado estar enfermo, (incluso significa estarstar enfermo de lepra);
+
+        Por desgracia, en este país y en otros del mundo en desarrollo, el embarazo efectivamente tiene bastantes más posibilidades de acabar mal que en otros lugares...
+
+        Pero aunque nos sintamos tentados de dar esa explicación para la raíz de la palabra, lo cierto es que en sus orígenes tan peligroso era dar a luz en África como en cualquier lugar de Europa.</p>
+
+
+
+        <h3>Una muerte, un nacimiento</h3>
+        <h3 id="3_regalos">Los Tres Regalos</h3>
+
+
+        <h4>LA CINTA: El ahogamiento</h4>
+        <q class="q_schnee">La  vieja  sacó  una  trenzada  en  seda  multicolor, y Blancanieves pensó: 
+        -Bien puedo dejar entrar a esta buena mujer. Corrió  el  cerrojo  para  permitirle  el  paso  y  poder comprar esa linda cinta. 
+        -¡Niña  -dijo  la  vieja-  qué  mal  te  has  puesto  esa  cinta! Acércate que te la arreglo como se debe. Blancanieves,  que  no  desconfiaba,  se  colocó  delante de ella para que le arreglara el lazo. Pero rápidamente la  vieja  lo  oprimió  tan  fuerte  que  Blancanieves  perdió el aliento y cayó como muerta.</q>
+
+        <p>La clave
+        <a href="http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S0138-600X2015000100011">  </a>
+        </p>
+
+
+
+        <h4>EL PEINE: La sangre</h4>
+        <q class="q_schnee">-Al menos podrás mirar -dijo la vieja, sacando el peine envenenado y levantándolo en el aire. Tanto le gustó a la niña que se dejó seducir y abrió la puerta. Cuando se pusieron de acuerdo sobre la compra la vieja le dilo: -Ahora te voy a peinar como corresponde. La pobre Blancanieves, que nunca pensaba mal,  dejó hacer a la vieja pero apenas ésta le había puesto el peine en los cabellos el veneno hizo su efecto y la pequeña cayó sin conocimiento.</q>
+        <p>Lo primero a notar aquí es la palabra "seducir". En  el <a href="">texto en alemán del cuento </a> se utiliza la palabra "betören", que podemos traducir como "engañar  o también como "seducir" <a href="https://www.collinsdictionary.com/dictionary/german-english/betoren"> [] </a> 
+
+
+        <p>Por su parte la palabra  "seducir" proviene <a href="http://etimologias.dechile.net/?seducir"> [] </a> viene del latin <i>seducere</i>, formada por el prefijo se- y el verbo ducere (guiar). Ducere viene de la raíz indoeuropea deuk- que significa guiar, dirigir y conducir. Esta raíz también dio al latín la palabra dux (guía, conductor, jefe)</p>
+
+        <p>Así entendemos que seducir es guiar para conducir a alguien separaamente (por el camino que al otro le conviene). En origen el verbo latino significaba "llevar  aparte" a  alguien, y despues atraerlo conduciendolo fuera del camino que llevaba</p>
+
+        <p>En este caso, lo que los enanos debieron hacer para recuperar a blancanieves de la "muerte", fue sacr el peine que había metido la Madrastra/vieja/bruja. La implicación sexual de este acto de meter y sacar objetos punzantes parece obvia cuando se mira edede esta óptica</p>
+
+        <p>Vale también acortar que el peine no es un objeto cualquiera. En primer lugar, es un objeto relacionado con la belleza, el adorno y la vanidad, que al menos en su concepción clásica, no existe en la niñez. En segundo lugar, pero quizá aún más importante es la idea que transmite su modo de uso: Tenemos un objeto punzante que entra y sale una y otra vez en el cuerpo de la mujer (a quien principalmente se le relaciona con el uso de peines). Tal vez no solo es interesante, sino también sea un factor importante, el hecho de quepor lo menos durante la Edad Media el peine tuvo algún tipo de relación ritualista. Incluso existe un tipo especila de peine litúrgico que se utilizaba específicamente para estas ceremonias.</p>
+
+        <p>El peinado ritual del cabello de los sacerdotes puede haber comenzado cuando el cristianismo se convirtió en la religión del estado romano en el siglo IV. La mayoría de los peines sobreviven con contexto insuficiente. todavía se estaban haciendo en el siglo XII; y las referencias a su uso aparecen en rituales eclesiásticos hasta el siglo XVI. El pontifical de finales del siglo XIII de Mende se refiere al peinado del cabello, y los pontificales y misales a partir de entonces dan plegarias para ser pronunciadas mientras se peina <a href="https://books.google.com.ar/books?id=FtlMAgAAQBAJ&lpg=RA1-PA193&hl=sv&pg=RA1-PA183&redir_esc=y#v=onepage&q&f=false">[]</a>
+
+
+
+        <h4>LA MANZANA: 🍎 El fruto</h4>
+        <q class="q_schnee">No  puedo  dejar  entrar  a  nadie;  los  enanos  me  lo  han prohibido. -No es nada -dijo la campesina- me voy a librar de mis manzanas. Toma, te voy a dar una. -No-dijo Blancanieves -tampoco debo aceptar nada. -¿Temes  que  esté  envenenada?  -dijo  la  vieja-;  mira, corto  la  manzana  en  dos  partes;  tú  comerás  la  parte roja y yo la blanca. La  manzana  estaba  tan  ingeniosamente  hecha  que solamente  la  parte  roja  contenía  veneno.  La  bella manzana  tentaba  a  Blancanieves  y  cuando  vio  a  la campesina comer no pudo resistir más, estiró la mano y tomó la mitad envenenada. Apenas tuvo un trozo en la boca, cayó muerta</q>
+
+        <p>En nuestra cultura, la manzana tiene una tradición de ser usada como un símbolo de la tentación, y es la primera imagen que nos llega al pensar en la frase proverbial "el fruto prohibido", y luego, su asociación principal es con una mujer. Ejemplos principales de esto es la versión de la historia de la <a href="">Guerra de Troya</a>, en la cual Paris entrega como premio a quień el elije como la Diosa más bella, una manzana de oro, luego de haber pactado recibir por intermedio de  esa Diosa el amor de Helena, la mujer más bella de Grecia. </p>
+
+        <p>El otro ejemplo es sin duda la historia bíblica del <a href=""> Jardín del Edén</a>,que si bien en ninguna parte dice que sea una manzana ese "fruto prohibido" del árbol del conocimento que termina comiendo Eva, la primera y única mujer en el mundo en ese entonces (así que también la más bella, LOL). De hecho, esta asociación casi general de la manzana con el fruto que Eva come y comparte a Adán, es por esto mucho más interesante y oportuna para la proposición </p>
+
+        <p>La interpretación propuesta sobre este tercer regalo continua con la asociación de colores y de el desarrollo de la mujer. En este caso, morder la manzana no es más que "caer en la tentación" del deseo sexual y, para decirlo "elegantemente", dejar a trás la doncellez.</p>
+        
+        <p>Mientras ue la parte Blanca representa la inocencia y castidad de la infancia, la parte roja, csiendo universalmente aceptado el color rojo como símbolo de l pasión y el deseo sexual, y mnzna Y Blancanieves no es una doncella virgen, es una mujer. Esto a su vez trae una consecuencia más</p>
+
+        <p>Para  reforzar la idea de esta interpretación, hay que decir que otra idea muy común en la litertura occidental es el aceptar alimento como un símbolo de iniciación a una nueva realidad o transformación en un nuevo ser. Son muchas las historias donde un personaje acepta tomar alimentos y desde entonces queda atrapado en un lugar. Uno de los ejemplo más importante si dudas de esto es si está en el Mito de Perséfone,<a href="">en el Himno Homérico a Demeter </a>, pero quiza el más universal es el sacramento de la Comunión Cristiana, que toma como base la historia de <a href=""> La Última Cena</a>. Por supuesto existen muchos más, y para eso puedes ver <a href="">este  post</a>pero para cerrar por ahora, es imortante nombrar el ejemplo de <a href="">Alicia en el Pais de las Maravillas</a></p>
+
+
+        <h3>La Huida: El Cazador y El Bosque</h3>
+
+
+        <h3>Los Siete Enanos</h3>
+        <p> En el cuento de los Hermanos Grimm se refieren a los enanos como "die sieben Zwerge" lo cual traduce exactamente "los siete enanos", y son presentados como "die Herren von dem Häuslein", lo cual se puede traducir como "los que mandan en la casa" ala cual llega Blancanieves al pasar el bosque.
+        Sin embargo, aunque es constante la compañia de otros seres, no siempre son enanos en las otras versiones del cuento. En algunas versiones son ladrones 
+        Bajo la interpretación</p>
+
+
+        <h3>Finalmente: La Madrastra y el Espejo</h3>
+      </div>
+
+      <div id="referencias_schnee"><h2>Referencias</h2>
+        <ol id="">
+        <li><a href="http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S0138-600X2015000100011">Curioso origen y significado de la palabra embarazada</a></li>
+        <li><a href="https://www.bebesymas.com/otros/el-curioso-origen-de-la-palabra-embarazada-en-varias-lenguas">El curioso origen de la palabra "embarazada" en varias lenguas</a></li>
+        <li><a href="https://books.google.com.ar/books?id=FtlMAgAAQBAJ&lpg=RA1-PA193&hl=sv&pg=RA1-PA183&redir_esc=y#v=onepage&q&f=false">https://books.google.com.ar/books?id=FtlMAgAAQBAJ&lpg=RA1-PA193&hl=sv&pg=RA1-PA183&redir_esc=y#v=onepage&q&f=false</a></li>
+
+        <li><a href="https://www.commentarymagazine.com/articles/who-really-was-bruno-bettelheim/">Who really was Bruno Bettelheim/</a></li> 
+        <li><a href="http://www.heortiz.net/ampag/mitos/bettelheim-pa_cuentos_de_hadas.pdf">Bettelheim, Bruno. The Uses of Enchantment: The Meaning and Importance of Fairy Tales (1976)</a></li> 
+        <li> <a href="https://books.google.co.in/books?id=qr3BAwAAQBAJ&printsec=frontcover&dq=Snow+White%22+is+a+German+fairy+tale+known+across+much+of+Europe+and+is+today+one+of+the+most+famous+fairy+tales+worldwide&hl=en&sa=X&ved=0ahUKEwjD-ci1l9bKAhXMC44KHUxXCKUQ6AEIOjAF#v=onepage&q&f=false">The Original Folk and Fairy Tales of the Brothers Grimm by Jacob Grimm, Wilhelm Grimm</a></li>
+        <li><a href="https://de.wikisource.org/wiki/Anmerkungen_zu_den_Kinder-_und_Hausm%C3%A4rchen_der_Br%C3%BCder_Grimm_I/Sneewittchen">
+        Anmerkungen zu den Kinder- und Hausmärchen der Brüder Grimm I von Johannes Bolte, Jiří Polívka
+        </a></li>
+        <li> <a href="http://translate.chichewadictionary.org/">Diccionario Chichewa online</a></li>
+        </ol>
+      </div>
+
+      <div id="creditos_schnee"><h2>creditos</h2>
+      </div>
+    </div>
+  </body>
+</html>
