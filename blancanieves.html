@@ -23,9 +23,7 @@
 
     <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
         <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
-
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>         
       <title>Blancanieves: Coming of Age</title>
       <style>
 
@@ -142,15 +140,14 @@
             <h1  style='text-indent:5px;color:#e43400; font-family:&quot;Pacifico&quot;;'>
                  <em>Blancanieves</em>
             </h1>
-            <center><br/><br/> <p style='font-size:16px; font-family:Monserrat; font-weight:300'> s </p>       
+            <center><br/><br/> <p style='font-size:16px; font-family:Monserrat; font-weight:300'> Coming of Age </p>       
             </center>
         </div>
     </div>
       <!-- FIN JUMBOTRON -->
-    <center id="cuento_title_schnee" style="text-align: right;padding:1% 5%">
-      <h3>El Cuento:
-        
-      </h3>
+     <h3>Cuento:<a onclick="getElementById('cuento_title_schnee').style.display='block'">leer</a> </h3>
+    <center id="cuento_title_schnee" style="text-align: right;padding:1% 5% display:none">
+     
 
       <div id="cuento_schnee">
         <p>Había una vez hace mucho tiempo, allá en el norte, a la mitad del invierno, cuando los copos de nieve caen como plumas desde el cielo, una reina que gustaba de coser sentada junto a una ventana que tenía los marcos hechos de ébano negro. Y mientras cosía y miraba hacia afuera el caer de la nieve , se punzó uno de sus dedos, y tres gotas de sangre cayeron sobre algunos copos de nieve que habían entrado por la ventana. Y vio aquella sangre preciosa sobre la blanca nieve, y pensó:</p>
@@ -384,32 +381,25 @@
       </div>
     
       <div id="about_analisis" >
-        ``<h2>Sobre el Análisis</h2>
+        <h2>Sobre el Análisis</h2>
           <img id="img_about_analisis" src=""/>
           <p>En ninguna oportunidad que se presente el término análisis, me refiero a un análisis literario científico riguroso. Recibe este término como una interpretación libre, pero sobre todo ficticia, como un género literario más dónde propongo una <a href="https://literaturamagna.blogspot.com/p/about-analisis.html">interpretación de un texto</a>, o parte de él, desde un punto de vista, no manipulado, pero que probblemente no se ajuste al texto en su totalidad y segurmente puede ser objetado con facilidad, así que la idea es leer los "análisis" como una obra de ficción con el objetivo de entretener, aunque no por eso están fuera de lógica o cambian intencionalmente el texto original.</p>
-
           <p>Sin embargo, el hecho de muchas veces dejar de analizar grandes partes de un texto no significa de ninguna manera que la interpretación no pueda ser cierta, incluso si pierde validez al utilizarse en esas parte no incorpordas en el análisis. Esto va con el punto de vista que en este blog se utiliza del término literatura. Para entender mejor esto, revisa la sección <a  href="https://literaturamagna.blogspot.com/p/about-literature.html"> "Sobre la Literatura"</a>.</p>
-
           <p>En definitiva me divierte solo me divierte imaginar que la interpretación que propongo es posible, y realmente aún no tengo motivos para considerarlas falsas, pero por no ser un experto ni haber hecho un trabjo de investigación profunda, solo las presente como invenciones factibles</p>
       </div>
 
       <div id="about_literatura"><h2>Sobre la Literatura</h2>
         <img id="img_about_literatura" src=""/>
         <p>En la concepción que se da en este blog al término literatura, no se contempla casi en inguna oportunicdad al "autor" como un ser del cual nace la obra y solo a él esta debe completamente su existencia</p>
-
         <p>La idea que se defiende aquí es que un obra literaria nace en marco de un cultura, que su nacimiento y formacion es inevitable y siempre está latente a nacer y solo saldrá a la luz cuando las condiciones se den, y ese ser a quién se llama autor es solo una de las condiciones.</p>
-
         <p>La idea principal es que no existe la total originalidad, y que cada obra es el resultado de la interación de diferentes ideas, puntos de vistas, situaciones, necesidades que se unen y se alimentan unas a otras a lo largo de siglos, y cundo por fin una persona, o grupo de personas, ponen "en papel" una obras, esta tiene tanto de ellos como de cada ser humano que ha participado en esa cultura (muchas veces incluso los de otras culturas)</p>
-
         <p>En este sentido, decir que no tiene lógic apensar que "el autor" quisiera decir esto o aquello es casi esteril pues para fines de nuestor anaĺisis, "el autor" tiene tanto dominio de lo que la obra quiere o no decir como cada lector. Para más acerca de esto, ir a la página <a href="https://literaturamagna.blogspot.com/p/about-literature.html">"sobre literatura"</a></p>
       </div>
 
       <div id="about_fairy_tales"><h2>Sobre los Cuentos de Hadas</h2>
         <img id="img_about_fairy_tales" src=""/>
         <p>En particular, en los Cuentos de Hadas como género literario es donde mas fuerza cobra la representacion de la obra literaria como un esfuerzo colectivo pero casi inconsciente. Colectivo pues los cuentos de hadas por tradición no tienen un autor claro. Son "tradicionalmente" una historia oral contada a traves de generaciones y regiones recibiendo en cada época y lugar modificaciones que muchas veces parecen no tener un motivo claro.</p>
-
         <p>Sin embargo, lo que aquí tomamos como un hecho, y que dirije las propuestas que se hacen, es que todo cuento de hadas no tiene una intención clara, al menos no en general. La teoría es que estas historias tienen cada una cientos o miles de años, con un origen que hace mucho se perdió en el tiempo, y que sobreviven gracias a que cada pueblo, cada generación las reutiliza como medio para transmitir sus valores a sus niños y niñas</p>
-
         <p>La idea fundamental que se maneja en estos "análisis" es que los cuentos con protagonitas masculinos son contados para mostrar a los niños (varones) como se supone que deben comportarse, y a su vez, los cuentos con protagonistas femeninos son contados a las niñas con el mismo propósito. Pero no solo como un comportamiento diario, sino como una historia de como será, o debería ser, su vida a futuro: Qué tipo de vida debe llevar, cuales serán sus labores y a qué debe y no debe aspirar. Para explorar más tipo de mensajes pueden intentar transmitir estos cuentos ver la página <a href="https://literaturamagna.blogspot.com/p/cuentos-de-hadas.html">"Fairy Tails"</a></p>
       </div>
 
@@ -431,23 +421,19 @@
 
 
         <h3>El nombre</h3>
-        <q>Weis wie schnee, rot wie blut, schwarzehaare wie ebenholz</q>
+        <quote>Weis wie schnee, rot wie blut, schwarzehaare wie ebenholz</quote>
+        <p>And although the most well-known Snow White version describes the hair of the main character as "black as ebony". But the Brothers Grimm knitted almost all their fairy tales several times over, and in the earliest written version of this material, Snow White had evidence of "eyes as black as ebony" and "yellow hair."</p>
+        <h4>
+          
+        </h4><a href="https://www.bebesymas.com/otros/el-curioso-origen-de-la-palabra-embarazada-en-varias-lenguas">
+        La Muerte y la nueva Vida</a></h4>
+        <p>En la República africana de Malaui encontramos otro curioso origen. El embarazo visto como algo que puede dar la vida, pero también traer la muerte. La palabra tiene la connotación de 'enfermedad'.</p>
+        <p>En chichewa, el idioma de Malawi, existen tres palabras que designan embarazo: "pakati", "matenda" y "wodwala". </p>
+        <p>En este sentido, "pakati" significa literalmente "en el medio"; "wodwala" tienen cmo principal significado estar enfermo, (incluso significa estarstar enfermo de lepra);</p>>
+        <p>Por desgracia, en este país y en otros del mundo en desarrollo, el embarazo efectivamente tiene bastantes más posibilidades de acabar mal que en otros lugares...</p>
+        <p>Pero aunque nos sintamos tentados de dar esa explicación para la raíz de la palabra, lo cierto es que en sus orígenes tan peligroso era dar a luz en África como en cualquier lugar de Europa.</p>
 
-        <p>And although the most well-known Snow White version describes the hair of the main character as "black as ebony". But the Brothers Grimm knitted almost all their fairy tales several times over, and in the earliest written version of this material, Snow White had evidence of "eyes as black as ebony" and "yellow hair."
-
-
-        <a href="https://www.bebesymas.com/otros/el-curioso-origen-de-la-palabra-embarazada-en-varias-lenguas">La Muerte y la nueva Vida</a>
-        En la República africana de Malaui encontramos otro curioso origen. El embarazo visto como algo que puede dar la vida, pero también traer la muerte. La palabra tiene la connotación de 'enfermedad'.
-
-        En chichewa, el idioma de Malawi, existen tres palabras que designan "embarazo": "pakati", "matenda" y "wodwala". En este sentido, "pakati" significa literalmente "en el medio"; "wodwala" tienen cmo principal significado estar enfermo, (incluso significa estarstar enfermo de lepra);
-
-        Por desgracia, en este país y en otros del mundo en desarrollo, el embarazo efectivamente tiene bastantes más posibilidades de acabar mal que en otros lugares...
-
-        Pero aunque nos sintamos tentados de dar esa explicación para la raíz de la palabra, lo cierto es que en sus orígenes tan peligroso era dar a luz en África como en cualquier lugar de Europa.</p>
-
-
-
-        <h3>Una muerte, un nacimiento</h3>
+        <h2>Una muerte, un nacimiento</h2>
         <h3 id="3_regalos">Los Tres Regalos</h3>
 
 
@@ -465,37 +451,20 @@
         <h4>EL PEINE: La sangre</h4>
         <q class="q_schnee">-Al menos podrás mirar -dijo la vieja, sacando el peine envenenado y levantándolo en el aire. Tanto le gustó a la niña que se dejó seducir y abrió la puerta. Cuando se pusieron de acuerdo sobre la compra la vieja le dilo: -Ahora te voy a peinar como corresponde. La pobre Blancanieves, que nunca pensaba mal,  dejó hacer a la vieja pero apenas ésta le había puesto el peine en los cabellos el veneno hizo su efecto y la pequeña cayó sin conocimiento.</q>
         <p>Lo primero a notar aquí es la palabra "seducir". En  el <a href="">texto en alemán del cuento </a> se utiliza la palabra "betören", que podemos traducir como "engañar  o también como "seducir" <a href="https://www.collinsdictionary.com/dictionary/german-english/betoren"> [] </a> 
-
-
         <p>Por su parte la palabra  "seducir" proviene <a href="http://etimologias.dechile.net/?seducir"> [] </a> viene del latin <i>seducere</i>, formada por el prefijo se- y el verbo ducere (guiar). Ducere viene de la raíz indoeuropea deuk- que significa guiar, dirigir y conducir. Esta raíz también dio al latín la palabra dux (guía, conductor, jefe)</p>
-
         <p>Así entendemos que seducir es guiar para conducir a alguien separaamente (por el camino que al otro le conviene). En origen el verbo latino significaba "llevar  aparte" a  alguien, y despues atraerlo conduciendolo fuera del camino que llevaba</p>
-
         <p>En este caso, lo que los enanos debieron hacer para recuperar a blancanieves de la "muerte", fue sacr el peine que había metido la Madrastra/vieja/bruja. La implicación sexual de este acto de meter y sacar objetos punzantes parece obvia cuando se mira edede esta óptica</p>
-
         <p>Vale también acortar que el peine no es un objeto cualquiera. En primer lugar, es un objeto relacionado con la belleza, el adorno y la vanidad, que al menos en su concepción clásica, no existe en la niñez. En segundo lugar, pero quizá aún más importante es la idea que transmite su modo de uso: Tenemos un objeto punzante que entra y sale una y otra vez en el cuerpo de la mujer (a quien principalmente se le relaciona con el uso de peines). Tal vez no solo es interesante, sino también sea un factor importante, el hecho de quepor lo menos durante la Edad Media el peine tuvo algún tipo de relación ritualista. Incluso existe un tipo especila de peine litúrgico que se utilizaba específicamente para estas ceremonias.</p>
-
         <p>El peinado ritual del cabello de los sacerdotes puede haber comenzado cuando el cristianismo se convirtió en la religión del estado romano en el siglo IV. La mayoría de los peines sobreviven con contexto insuficiente. todavía se estaban haciendo en el siglo XII; y las referencias a su uso aparecen en rituales eclesiásticos hasta el siglo XVI. El pontifical de finales del siglo XIII de Mende se refiere al peinado del cabello, y los pontificales y misales a partir de entonces dan plegarias para ser pronunciadas mientras se peina <a href="https://books.google.com.ar/books?id=FtlMAgAAQBAJ&lpg=RA1-PA193&hl=sv&pg=RA1-PA183&redir_esc=y#v=onepage&q&f=false">[]</a>
 
-
-
         <h4>LA MANZANA: 🍎 El fruto</h4>
-        <q class="q_schnee">No  puedo  dejar  entrar  a  nadie;  los  enanos  me  lo  han prohibido. -No es nada -dijo la campesina- me voy a librar de mis manzanas. Toma, te voy a dar una. -No-dijo Blancanieves -tampoco debo aceptar nada. -¿Temes  que  esté  envenenada?  -dijo  la  vieja-;  mira, corto  la  manzana  en  dos  partes;  tú  comerás  la  parte roja y yo la blanca. La  manzana  estaba  tan  ingeniosamente  hecha  que solamente  la  parte  roja  contenía  veneno.  La  bella manzana  tentaba  a  Blancanieves  y  cuando  vio  a  la campesina comer no pudo resistir más, estiró la mano y tomó la mitad envenenada. Apenas tuvo un trozo en la boca, cayó muerta</q>
-
-        <p>En nuestra cultura, la manzana tiene una tradición de ser usada como un símbolo de la tentación, y es la primera imagen que nos llega al pensar en la frase proverbial "el fruto prohibido", y luego, su asociación principal es con una mujer. Ejemplos principales de esto es la versión de la historia de la <a href="">Guerra de Troya</a>, en la cual Paris entrega como premio a quień el elije como la Diosa más bella, una manzana de oro, luego de haber pactado recibir por intermedio de  esa Diosa el amor de Helena, la mujer más bella de Grecia. </p>
-
+        <quote class="q_schnee">No  puedo  dejar  entrar  a  nadie;  los  enanos  me  lo  han prohibido. -No es nada -dijo la campesina- me voy a librar de mis manzanas. Toma, te voy a dar una. -No-dijo Blancanieves -tampoco debo aceptar nada. -¿Temes  que  esté  envenenada?  -dijo  la  vieja-;  mira, corto  la  manzana  en  dos  partes;  tú  comerás  la  parte roja y yo la blanca. La  manzana  estaba  tan  ingeniosamente  hecha  que solamente  la  parte  roja  contenía  veneno.  La  bella manzana  tentaba  a  Blancanieves  y  cuando  vio  a  la campesina comer no pudo resistir más, estiró la mano y tomó la mitad envenenada. Apenas tuvo un trozo en la boca, cayó muerta</quote>
+       <p>En nuestra cultura, la manzana tiene una tradición de ser usada como un símbolo de la tentación, y es la primera imagen que nos llega al pensar en la frase proverbial "el fruto prohibido", y luego, su asociación principal es con una mujer. Ejemplos principales de esto es la versión de la historia de la <a href="">Guerra de Troya</a>, en la cual Paris entrega como premio a quień el elije como la Diosa más bella, una manzana de oro, luego de haber pactado recibir por intermedio de  esa Diosa el amor de Helena, la mujer más bella de Grecia. </p>
         <p>El otro ejemplo es sin duda la historia bíblica del <a href=""> Jardín del Edén</a>,que si bien en ninguna parte dice que sea una manzana ese "fruto prohibido" del árbol del conocimento que termina comiendo Eva, la primera y única mujer en el mundo en ese entonces (así que también la más bella, LOL). De hecho, esta asociación casi general de la manzana con el fruto que Eva come y comparte a Adán, es por esto mucho más interesante y oportuna para la proposición </p>
-
-        <p>La interpretación propuesta sobre este tercer regalo continua con la asociación de colores y de el desarrollo de la mujer. En este caso, morder la manzana no es más que "caer en la tentación" del deseo sexual y, para decirlo "elegantemente", dejar a trás la doncellez.</p>
-        
+        <p>La interpretación propuesta sobre este tercer regalo continua con la asociación de colores y de el desarrollo de la mujer. En este caso, morder la manzana no es más que "caer en la tentación" del deseo sexual y, para decirlo "elegantemente", dejar a trás la doncellez.</p>  
         <p>Mientras ue la parte Blanca representa la inocencia y castidad de la infancia, la parte roja, csiendo universalmente aceptado el color rojo como símbolo de l pasión y el deseo sexual, y mnzna Y Blancanieves no es una doncella virgen, es una mujer. Esto a su vez trae una consecuencia más</p>
-
         <p>Para  reforzar la idea de esta interpretación, hay que decir que otra idea muy común en la litertura occidental es el aceptar alimento como un símbolo de iniciación a una nueva realidad o transformación en un nuevo ser. Son muchas las historias donde un personaje acepta tomar alimentos y desde entonces queda atrapado en un lugar. Uno de los ejemplo más importante si dudas de esto es si está en el Mito de Perséfone,<a href="">en el Himno Homérico a Demeter </a>, pero quiza el más universal es el sacramento de la Comunión Cristiana, que toma como base la historia de <a href=""> La Última Cena</a>. Por supuesto existen muchos más, y para eso puedes ver <a href="">este  post</a>pero para cerrar por ahora, es imortante nombrar el ejemplo de <a href="">Alicia en el Pais de las Maravillas</a></p>
-
-
         <h3>La Huida: El Cazador y El Bosque</h3>
-
-
         <h3>Los Siete Enanos</h3>
         <p> En el cuento de los Hermanos Grimm se refieren a los enanos como "die sieben Zwerge" lo cual traduce exactamente "los siete enanos", y son presentados como "die Herren von dem Häuslein", lo cual se puede traducir como "los que mandan en la casa" ala cual llega Blancanieves al pasar el bosque.
         Sin embargo, aunque es constante la compañia de otros seres, no siempre son enanos en las otras versiones del cuento. En algunas versiones son ladrones 
