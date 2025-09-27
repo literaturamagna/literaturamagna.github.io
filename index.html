@@ -1,77 +1,330 @@
-<!DOCTYPE html>
-<head>
-	
-	<title>Literatura Magna</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="css/literaturamagna.css" rel="stylesheet" type="text/css">	
-	<link async="async" href="https://fonts.googleapis.com/css?family=Abel|Pacifico|Lora|Roboto|Lobster|Economica|Marck+Script|Sacramento|Tangerine|Lovers+Quarrel|Nova+Square|Roboto|Raleway|Satisfy" rel="stylesheet">
-</head>
-<body>
-	<div class="templatemo-logo visible-xs-block">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg logo-left-container">
-			<h1 class="logo-left">Literatura</h1>
+<html>
+  <head>
+    <meta charset='utf-8'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <meta content='Ivan Lopez Pedreañez' name='author'/>
+    <meta content='La mejor literatura de la cultura occidental ' name='description'/>
+    <meta content='literatura, cultura occidental, clasicos, literatura clasica, literatura gotica,  literatura romantica, literatura filosofia, novelas ' name='keywords'/>
+
+    
+     
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link async="async" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> 
+		<script async='async' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+		<link async="async" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- GOOGLE FONTS-->
+		<link async="async" href="https://fonts.googleapis.com/css?family=Abel|Pacifico|Lora|Roboto|Lobster|Economica|Marck+Script|Sacramento|Tangerine|Lovers+Quarrel|Nova+Square|Roboto|Raleway|Satisfy" rel="stylesheet" />
+
+		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+		<style>
+			.mox {width:75%;}
+			html,body{
+				background-image: url('golden.jpeg');
+				background-size:  cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+			  	font-family:Abel;
+			    overflow-x: hidden; 
+			    height:; 
+			    width:;
+
+			}
+			:root{
+				--oldgold:rgba(120,97,0,0.75);
+				--golder:#D4AF37;
+				--yellow:#FABB13FF;
+			};
+			.flex-centrado-c{ display:flex; flex-flow: column nowrap; justify-content: center; align-items: center; align-content: center; }
+			.flex-centrado-r{ display:flex; flex-flow: row nowrap;  justify-content: center; align-items: center; align-content: center; }
+
+			  #nav_bar {background-color:var(--yellow);}
+			  #golden_frame {
+				  	position:fixed;
+				  	float:left;
+				  	width:27%;
+				  	z-index:1;
+				  	top:50px;
+				  }
+			  #golden_frame2 {
+				  	position:fixed;
+				  	float:left;
+				  	width:4.6%;
+				  	z-index:1;
+				  	top:356px;}
+			   #jumbolegend {font-family:Open Sans Condensed;font-size: 2.1vw}
+			   #jumboton {background:var(--oldgold);border:1px ridge white;;}
+			   .jumbotron {
+				    background: #000 url("Fondo_MagnaLiteratura_corto.png") center center;
+				    width: 100vw;
+				    height: 100vh;
+				    background-size: cover;
+				    overflow: hidden;
+				    color: #fff;
+				    border-bottom:3px solid black;}
+
+				 .jumbotron .container{
+				    display:flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    align-content: flex-end;
+				    align-items: flex-end;
+				}			 
+				 
+				#tweets{
+					display:flex;
+					flex-direction: row nowrap; 
+					justify-content: space-around; 
+					align-items: center; 
+					align-content: center}
+
+				.tweets {display: flex; width:30vw; border:1px solid black;}
+				
+				h2{font-family:Tangerine;color:var(--golder);text-shadow:0.5px 0.5px rgb(179, 149, 0)}
+				  a{color:var(--yellow)}
+
+				  @media screen and (max-width:800px){
+					
+					   .jumbotron {width: 100vw;height: 40vh;background-size: 100% 100%;}
+					    #golden_frame {width:47%;z-index:1;top:44px;}
+						#golden_frame2 {width:12%;z-index:1;top:84px;}
+					    #jumbolegend {}
+					    #main {position:relative;left:5%}
+
+						#tweets {flex-flow: column wrap;}
+						.tweets{width: 65vw; height: 55vh; margin-bottom: 10vh; overflow-y: hidden}				  
+			</style>
+
+	</head>
+
+  	<body>
+		<div id='LiteraturaMagna'>  
+
+			<!-- Bootstrap navbar -->
+	  
+	      <nav class='navbar navbar-inverse navbar-fixed-top' id='nav_bar' style='background-color:var(--yellow)'>
+	        <div class='container-fluid'>
+	          <div class='navbar-header'>
+	            <button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+	              <span class='sr-only'>Toggle navigation</span>
+	              
+	            </button>
+	            <a class='navbar-brand' href='https://literaturamagna.blogspot.com' style='color:white;background-color:rgba(120,97,0,0.75);font-family:Lovers Quarrel;font-size:280%'>Magna Litterae</a>
+	          </div>
+	          <div class='navbar-collapse collapse' id='navbar'>
+	            <ul class='nav navbar-nav' style='color:white'>
+	              <li class='active'><a href='#' style='color: white'>Prólogo</a></li>
+	              <li><a href='novela.html' style='color:white'>Novelas</a></li>
+	              <li><a href='poesia.html' style='color:white'>Poesía</a></li>
+	              <li><a href='dramae.html' style='color:white'>Drama</a></li>
+	              <li><a href='epica.html' style='color:white'>Épica</a></li>
+	              <li><a href='cuentos-de-hadas.html' style='color:white'>Fairy Tales</a></li>
+	              
+	              <li class='dropdown'>
+	                <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' style='color:white'>Leer <span class='caret'/>
+	                </a>
+	                <ul class='dropdown-menu'>
+	                  <li><a href='biblioteca.html'>Biblioteca</a></li>
+	                  <li><a href='obras.html'>De mi pluma</a></li>                                   
+	                </ul>
+	              </li>
+
+				  <li class='dropdown'>
+	                <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' style='color:white'>Circa<span class='caret'/>
+	                </a>
+	                <ul class='dropdown-menu'>
+	                  <li><a href='about-analisis.html'>Analisis</a></li>
+	                  <li><a href='about-literature.html'>Literatura</a></li>                  
+	                </ul>
+	              </li>
+	            </ul>
+
+	            <ul class='nav navbar-nav navbar-right '>
+	              <li class='active'>
+	              	<a href='./' style='background-color:black;color:white'>Contáctanos <span class='sr-only'>(current)</span></a>
+	              </li>             
+	            </ul>
+	          </div><!--/.nav-collapse -->
+	        </div><!--/.container-fluid -->
+	      </nav> 
+
+			<img id='golden_frame' src='https://3.bp.blogspot.com/-kpNiQhvlkis/W11T8zZgavI/AAAAAAAAFDo/169-Bo0knlsoBdA5oQpjuWjJAa3zhfWxgCLcBGAs/s1600/golden_frame01.png'/>
+			<img id='golden_frame2' src='https://3.bp.blogspot.com/-WAfHW6SbYmc/W3IsFZEmVBI/AAAAAAAAFKs/gt8CAZs7HNQJ1OmaSFTwEmeFIZj22CzYACLcBGAs/s1600/golden_frame03.png'/>
+			<!-- END NAVIGATION BOOTSTRAP BAR-->
+
+		  	<div class='jumbotron' id='jumboLM'>
+		      <div class='container' style=' padding-top:32vw'>
+		        
+		        <p id='jumbolegend'>La mejor literatura del mundo occidental</p>
+		        <p>
+		        	<a class='btn btn-primary btn-lg' href='#' id='jumboton' role='button'>Descubre</a>
+		        </p>
+		      </div>
+		    </div>
+				<div class='analisis '>
+					<h2 style="font-size: 60px; margin: 0px 14px">Analisis de Clasicos</h2>
+					<div class="clasico clasico1">
+						<p class='book_name' style='color:#e43400'>Blancanieves</p>
+						<p class='book_subt'>La muerte de la inocencia</p>
+					</div>
+					<div class="clasico clasico2">
+						<p class='book_name'>La Bella y la Bestia</p>
+						<p class='book_subt'>El ojo de la conciencia</p>
+					</div>
+					<div class="clasico clasico3">
+						<p class='book_name' style='color:gold'>El Rey Lear</p>
+						<p class='book_subt'>Los ojos del Rey</p>
+					</div>
+					<div class="clasico clasico4">
+						<p class='book_name'>Romeo y Julieta</p>
+						<p class='book_subt'>La lucha en la Polis</p>
+					</div>
+					<div class="clasico clasico5">
+						<p class='book_name' style='color:#e43400'>Rapunzel</p>
+						<p class='book_subt'>La luz interior</p>
+					</div>
+				</div>
+
+				<style type="text/css">
+					.analisis{
+						display:flex;
+						flex-direction: column;
+						justify-content: flex-start;
+						align-content: flex-end;
+						align-items: flex-end;
+					}
+					.clasico{
+						background-repeat: no-repeat;
+						background-size: 100% 100%;
+						background-position: center center; 
+						display: flex;
+						flex-flow: column nowrap;
+						justify-content: center;
+						align-content: flex-start;
+						align-items: flex-start;
+						padding-left:8vw;
+						width: 82vw;
+						height:27vh;
+						margin-bottom: 5vh;
+						border-radius: 0.52vw;
+					}
+
+					.clasico1{background-image:url('librae/snowwhite.jpg')}
+					.clasico2{background-image:url('librae/bellebete.jpg')}
+					.clasico3{background-image:url('librae/king_lear.jpg')}
+					.clasico4{background-image:url('librae/rometjul.jpg')}
+					.clasico5{background-image:url('librae/rapunzel.png')}
+
+					.book_name{font-family: Pacifico; color:#e1e100;font-size: 32px}
+					.book_subt{font-size: 24px; color: white;}
+
+					@media screen and (max-width:800px){
+					
+					.book_name{font-size: 26px}
+					.book_subt{font-size: 21px}
+						}	
+
+
+				</style>
+		    <div>
+			
+		    </div>
+
+		    <!--<center id='tweets'>
+				<div class='tweets' id='tw_ahz'>
+					<a async='async' class='twitter-timeline' data-height='500' data-lang='es' data-link-color='#FAB81E' href='https://twitter.com/asihabloZ?ref_src=twsrc%5Etfw'>Tweets by @asihabloZ</a>
+				</div>
+
+				<div class='tweets' id='tw_lm'>
+					<a async='async' class='twitter-timeline' data-height='500' data-lang='es' data-link-color='#FAB81E' data-theme='dark' href='https://twitter.com/LiteraturaMagna?ref_src=twsrc%5Etfw'>Tweets by @_Iliada_</a>
+				</div>
+
+				<div class='tweets' id='tw_ili'>
+					<a async='async' class='twitter-timeline' data-height='500' data-lang='es' data-link-color='#FAB81E' href='https://twitter.com/_Iliada_?ref_src=twsrc%5Etfw'>Tweets by LiteraturaMagna</a>
+				</div>
+		    </center>-->
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg logo-right-container">
-			<h1 class="logo-right">Magna</h1>
-		</div>			
-	</div>
-	<div class="templatemo-container">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
-			<h1 class="logo-left hidden-xs margin-bottom-60 LM-titulos">Literatura</h1>			
-			<div class="tm-left-inner-container">
-				<ul class="nav nav-stacked templatemo-nav">
-				  <li><a href="index.html" class="active"><i class="fa fa-home fa-medium"></i>Prologo</a></li>
-				  <li><a href="products.html"><i class="fa fa-book fa-medium"></i>Novelas</a></li>
-				  <li><a href="services.html"><i class="fa fa-book fa-medium"></i>Poesia</a></li>
-				  <li><a href="testimonials.html"><i class="fa fa-book fa-medium"></i>Drama</a></li>
-				  <li><a href="testimonials.html"><i class="fa fa-book fa-medium"></i>Epica</a></li>
-				  <li><a href="testimonials.html"><i class="fa fa-book fa-medium"></i>Leer</a></li>				  
-				  <li><a href="about.html"><i class="fa fa-gears fa-medium"></i>Circa</a></li>
-				  <li><a href="contact.html"><i class="fa fa-envelope-o fa-medium"></i>Contactanos</a></li>
-				</ul>
-			</div>
-		</div> <!-- left section -->
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
-			<h1 class="logo-right hidden-xs margin-bottom-60 LM-titulos">Magna</h1>		
-			<div class="tm-right-inner-container">
-				<h1 class="templatemo-header" style="font-family: Lobster;font-size: 400%">Cuentos de Hadas</h1>
-				<img src="images/fairytails.avif" alt="Wooden Desk" class="img-thumbnail">
-				<center><p style="color:black">lorem ipsum asdansduadsna dsausdai sdfsd undiq   cv vbvuwd quweqwuen</p></center>
-				<article>
-					<h2 class="LM-titulos">Blancanieves</h2>
-					<p>Black White is by  This is a responsive HTML5 template using Bootstrap. Credit goes to Font Awesome. Example:  Cras bibendum porta purus feugiat scelerisque. Vestibulum varius nibh ut diam commodo, sed volutpat libero pretium. Nullam malesuada lacinia rhoncus. Nunc ut porta elit. Cras a ex enim. Etiam blandit sem vel lacinia interdum. Curabitur ut erat sed dui pulvinar tincidunt. Mauris vulputate dolor nibh, vel sodales urna eleifend id.
-					</p>
-					<a href="products.html" class="btn btn-warning" style="background-color: #D4AF37">Ver Mas</a>			
-				</article>
-				<article>
-					<h2 class="LM-titulos">Rapunzel</h2>
-					<p>Maecenas in arcu eget velit lobortis dictum. Donec venenatis, justo quis efficitur pharetra, ligula ante pellentesque purus, sit amet tincidunt mauris elit non est. Etiam auctor, dui ut vehicula convallis, leo purus gravida massa, sed aliquet dui tellus rhoncus magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta lacus posuere, porta risus at, commodo lorem. 
-                    <br><br>Proin commodo, ligula sed consectetur tempus, ante tortor sodales justo, ut iaculis elit orci in risus. Phasellus vestibulum lorem ut lacus vehicula, congue blandit orci vestibulum. In aliquam auctor mi nec lobortis. Fusce pellentesque erat id est rutrum consequat.</p>
-					<a href="services.html" class="btn btn-warning" style="background-color: #D4AF37">Ver Mas</a>				
-				</article>
-				<article>
-					<h2 class="LM-titulos">La Bella y la Bestia</h2>
-					<p>Etiam aliquet risus purus, at bibendum libero tempus sit amet. Pellentesque imperdiet, erat in finibus volutpat, nisi dui mattis erat, eu elementum libero mauris lobortis odio. Ut at purus mollis, rutrum augue quis, sollicitudin massa. Integer neque augue, lobortis at leo at, blandit euismod nunc. Vivamus iaculis turpis at neque malesuada, ut tristique tortor viverra.</p>
-					<a href="about.html" class="btn btn-warning" style="background-color: #D4AF37">Ver Mas</a>				
-				</article>
-				<footer>
-					<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; 2025 Literatura Magna <!-- Credit: www.templatemo.com --></p>
-					<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-social">
-						<a href="#"><i class="fa fa-facebook fa-medium"></i></a>
-						<a href="#"><i class="fa fa-twitter fa-medium"></i></a>
-						<a href="https://www.instagram.com/literaturamagna/"><i class="fa fa-instagram fa-medium"></i></a>
-						<a href="#"><i class="fa fa-youtube fa-medium"></i></a>
-						<a href="#"><i class="fa fa-linkedin fa-medium"></i></a>
-					</p>
-				</footer>
-			</div>	
-		</div> <!-- right section -->
-	</div>	
-</body>
+	</body>
+
+
+
+
+	<script type="text/babel">
+				function Pubs(props){
+		        return(
+		          <div>
+		            <h2 className="sec_tit" > Analisis Clasicos </h2>
+		            <Analisis/>
+		          </div>
+		          )
+		        }
+		        
+		        function Analisis(props){
+		        var libros = [ 
+			            [' Blancanieves', 'El nacimiento de la mujer', 'librae/snowwhite.jpg', '#e43400'],
+			            [' Rey Lear', ' Los ojos del Rey', 'librae/king_lear.jpg, '#e1e100'],
+			            [' La Bella y La Bestia', ' El ojo de la conciencia', 'librae/bellebete.jpg,'#e1e100'],
+			            [' Romeo y Julieta', ' La Lucha por la Polis', 'librae/rometjul.jpg', '#e1e100'] ,
+			            [' Rapunzel', 'La luz interior', 'librae/rapunzel.png', '#e1e100']               
+		            ]
+
+		        return(
+		          <div>            
+		            <Clasico i={libros[0]}/>
+		            <Clasico i={libros[1]}/>
+		            <Clasico i={libros[2]}/>
+		            <Clasico i={libros[3]}/>
+		            <Clasico i={libros[4]}/>            
+		          </div>
+		          )
+		        }
+
+		        function Clasico(props){        
+		          return (
+		                  <div className="book_analisis"> 
+		                    <b>{props.i[0]}</b>
+		                    <img src= {props.src} />
+		                    <Partes txt={props.e}/>
+		                  </div>)       
+		          )
+		        }      
+		        
+
+		        function Partes(props){     
+		           ;         
+		          return(
+		                 <ul >
+		                  <Etapa  p={props.txt[0]}/>                
+		                  <Etapa  p={props.txt[1]}/>                
+		                  <Etapa  p={props.txt[2]}/>
+		                 </ul>
+		          )
+		        };
+
+		        function Etapa(props){
+		         
+		          var a = 2;
+		          return (
+		          <li className='partes'> 
+		            <i className="fa fa-arrow-circle-right"></i>  
+		            <b>{props.p}</b>
+		          
+		          </li> )
+		        };     
+
+		        ReactDOM.render(
+		            <Talleres/> ,
+		            document.getElementById("talleres")
+		        );
+		    </script>
 </html>
