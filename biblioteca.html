@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Biblioteca</title>
+	<head>
+    <meta charset='utf-8'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <meta content='Ivan Lopez Pedreañez' name='author'/>
+    <meta content='La mejor literatura de la cultura occidental ' name='description'/>
+    <meta content='literatura, cultura occidental, clasicos, literatura clasica, literatura gotica,  literatura romantica, literatura filosofia, novelas ' name='keywords'/>
+
+    
+     
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link async="async" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> 
+		<script async='async' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+		<link async="async" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- GOOGLE FONTS-->
+		<link async="async" href="https://fonts.googleapis.com/css?family=Abel|Pacifico|Lora|Roboto|Lobster|Economica|Marck+Script|Sacramento|Tangerine|Lovers+Quarrel|Nova+Square|Roboto|Raleway|Satisfy" rel="stylesheet" />
+
+		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+		<style>
+			.mox {width:75%;}
+			html,body{
+				background-image: ;
+				background-size:  cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+			  	font-family:Abel;
+			    overflow-x: hidden;
+			}
+			:root{
+				--oldgold:rgba(120,97,0,0.75);
+				--golder:#D4AF37;
+				--yellow:#FABB13FF;
+			};
+			.flex-centrado-c{ display:flex; flex-flow: column nowrap; justify-content: center; align-items: center; align-content: center; }
+			.flex-centrado-r{ display:flex; flex-flow: row nowrap;  justify-content: center; align-items: center; align-content: center; }
+
+			  #nav_bar {background-color:var(--yellow);}
+			  #golden_frame {
+				  	position:fixed;
+				  	float:left;
+				  	width:27%;
+				  	z-index:1;
+				  	top:50px;
+				  }
+			  #golden_frame2 {
+				  	position:fixed;
+				  	float:left;
+				  	width:4.6%;
+				  	z-index:1;
+				  	top:356px;}
+			   #jumbolegend {font-family:Open Sans Condensed;font-size: 2.1vw}
+			   #jumboton {background:var(--oldgold);border:1px ridge white;;}
+			   .jumbotron {
+				    background: #000 url("Fondo_MagnaLiteratura_corto.png") center center;
+				    width: 100vw;
+				    height: 100vh;
+				    background-size: cover;
+				    overflow: hidden;
+				    color: #fff;
+				    border-bottom:3px solid black;}
+
+				 .jumbotron .container{
+				    display:flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    align-content: flex-end;
+				    align-items: flex-end;
+				}			 
+				 
+				iframes{
+					display:flex;
+					flex-direction: row nowrap; 
+					justify-content: space-around; 
+					align-items: flex-start; 
+					align-content: flex-start;
+					height: 600px}
+
+				iframes {background: white}
+				
+				h2{font-family:Tangerine;color:var(--golder);text-shadow:0.5px 0.5px rgb(179, 149, 0)}
+				  a{color:var(--yellow)}
+
+				  @media screen and (max-width:800px){
+					
+					   .jumbotron {width: 100vw;height: 40vh;background-size: 100% 100%;}
+					    #golden_frame {width:47%;z-index:1;top:44px;}
+						#golden_frame2 {width:12%;z-index:1;top:84px;}
+					    #jumbolegend {}
+					    #main {position:relative;left:5%}
+
+						#tweets {flex-flow: column wrap;}
+						.tweets{width: 65vw; height: 55vh; margin-bottom: 10vh; overflow-y: hidden}				  
+			</style>
+	</head>
+
+  	<body>
+		<div id='LiteraturaMagna'>  
+
+			<!-- Bootstrap navbar -->
+	  
+		    <nav class='navbar navbar-inverse navbar-fixed-top' id='nav_bar' style='background-color:var(--yellow)'>
+		        <div class='container-fluid'>
+		          <div class='navbar-header'>
+		            <button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+		              <span class='sr-only'>Toggle navigation</span>
+		              
+		            </button>
+		            <a class='navbar-brand' href='https://literaturamagna.blogspot.com' style='color:white;background-color:rgba(120,97,0,0.75);font-family:Lovers Quarrel;font-size:280%'>Magna Litterae</a>
+		          </div>
+		          <div class='navbar-collapse collapse' id='navbar'>
+		            <ul class='nav navbar-nav' style='color:white'>
+		              <li class='active'><a href='#' style='color: white'>Prólogo</a></li>
+		              <li><a href='novela.html' style='color:white'>Novelas</a></li>
+		              <li><a href='poesia.html' style='color:white'>Poesía</a></li>
+		              <li><a href='dramae.html' style='color:white'>Drama</a></li>
+		              <li><a href='epica.html' style='color:white'>Épica</a></li>
+		              <li><a href='/fairytails/index.html' style='color:white'>Fairy Tales</a></li>
+		              
+		              <li class='dropdown'>
+		                <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' style='color:white'>Leer <span class='caret'/>
+		                </a>
+		                <ul class='dropdown-menu'>
+		                  <li><a href='biblioteca.html'>Biblioteca</a></li>
+		                  <li><a href='obras.html'>De mi pluma</a></li>                                   
+		                </ul>
+		              </li>
+
+					  <li class='dropdown'>
+		                <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' style='color:white'>Circa<span class='caret'/>
+		                </a>
+		                <ul class='dropdown-menu'>
+		                  <li><a href='about-analisis.html'>Analisis</a></li>
+		                  <li><a href='about-literature.html'>Literatura</a></li>                  
+		                </ul>
+		              </li>
+		            </ul>
+
+		            <ul class='nav navbar-nav navbar-right '>
+		              <li class='active'>
+		              	<a href='./' style='background-color:black;color:white'>Contáctanos <span class='sr-only'>(current)</span></a>
+		              </li>             
+		            </ul>
+		          </div><!--/.nav-collapse -->
+		        </div><!--/.container-fluid -->
+		    </nav> 
+
+			<img id='golden_frame' src='https://3.bp.blogspot.com/-kpNiQhvlkis/W11T8zZgavI/AAAAAAAAFDo/169-Bo0knlsoBdA5oQpjuWjJAa3zhfWxgCLcBGAs/s1600/golden_frame01.png'/>
+			<img id='golden_frame2' src='https://3.bp.blogspot.com/-WAfHW6SbYmc/W3IsFZEmVBI/AAAAAAAAFKs/gt8CAZs7HNQJ1OmaSFTwEmeFIZj22CzYACLcBGAs/s1600/golden_frame03.png'/>
+			<!-- END NAVIGATION BOOTSTRAP BAR-->
+
+			<div class='jumbotron' id='jumboLM'>
+			    <div class='container' style=' padding-top:32vw'>
+			        
+			    <p id='jumbolegend'>La mejor literatura del mundo occidental</p>
+			    <p>
+			      	<a class='btn btn-primary btn-lg' href='#' id='jumboton' role='button'>Descubre</a>
+			    </p>
+			</div>
+		</div>
+
+		<center>
+			<h2>Biblioteca</h2>			
+			<table style="width:80vw">
+				<thead>
+					<tr><th>Libro</th>
+						<th>Autor</th>
+						<th>Gener</th>
+						<th>Idioma Original</th>
+						<th>Link</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Blancanieves</td>
+						<td>Hermanos Grimm</td>
+						<td>Cuento de Hadas</td>
+						<td>Aleman</td>
+						<td>
+							<a href="https://www.argentina.gob.ar/sites/default/files/blancanieves_-_hermanos_grimm.pdf"  target="_blank">ir</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Rey Lear</td>
+						<td>William Shakespear</td>
+						<td>Teatro</td>
+						<td>Ingles</td>
+						<td>
+							<a href="https://ddooss.org/libros/rey_lear.pdf"  target="_blank">ir</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Romeo y Julieta</td>
+						<td>William Shakespare</td>
+						<td>Teatro</td>
+						<td>Ingles</td>
+						<td>
+							<a href="https://www.suneo.mx/literatura/subidas/William%20Shakespeare%20Romeo%20y%20Julieta.pdf"  target="_blank">ir</a>
+						</td>
+					</tr>
+				</tbody>				
+			</table>
+		</center>
+		<footer>
+			<center>
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fliteraturamagna%2Fposts%2Fpfbid0nuYNcvBZK6t81zZ398QQo8W5fNfQtFydHGa4dAcNrYroeNZaThX5pjvoeuMQXzwhl&show_text=false&width=500" width="25%" height="500px"  scrolling="yes" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fliteraturamagna%2Fposts%2Fpfbid0pfSAn1MHUzXMeUks6pRxFKSdg9w6fHCEcyW8PZtGVY8eDZtUcXaBep6CFgtde5t3l&show_text=false&width=500" width="25%" height="500px"  scrolling="no" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fliteraturamagna%2Fposts%2Fpfbid0vfpFMkbSpb5eRx2yfatXRooWfVQiPuJWX6sw33kwq21zj8WzdFhxhvB8HfyUFojml&show_text=false&width=500" width="25%" height="500px"  scrolling="yes" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+			</center>
+		</footer>
+		<footer class="fondo">
+			<div>
+				Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis nobis nihil, pariatur animi, alias possimus, suscipit repellat quasi fugiat, quam quae autem necessitatibus! Quam est, necessitatibus quidem explicabo facilis error excepturi amet illum, quas. Nulla, similique voluptatum eveniet necessitatibus voluptate nisi sunt consequatur assumenda illum, accusamus provident voluptas asperiores perferendis fuga! Natus, qui, voluptatibus! Suscipit vero qui repellat porro temporibus quia iste a illo reiciendis incidunt. Minima sequi laborum impedit quasi facilis labore et recusandae quisquam iste. Voluptatibus quisquam quasi deleniti quibusdam modi! Aut, aliquid, accusamus? Harum, doloremque, a!
+			</div>
+		</footer>
+</body>
+	<style>
+		.fondo{
+				background-color: var(--oldgold);
+				height: 20vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color:white;
+			}
+
+		.fondo div{
+				padding:40px;
+				margin: 40px;
+				display: flex;
+		}
+						
+
+		iframe{
+			border-top:20px solid var(--golder);
+			border-left:0px;
+			border-right:none;
+		}
+		@media screen and (max-width:800px){
+			.book_name{font-size: 26px}
+			.book_subt{font-size: 21px}
+		}	 
+
+	</style>
+</html>
